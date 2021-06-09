@@ -1,0 +1,49 @@
+.container-fluid#blur.active {
+
+filter: blur(20px);
+
+}
+
+#popup{
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+#popup.active{
+	top: 50%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+#popup .close-btn{
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 30px;
+	background:#222 ;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+	
+}
+a:hover {
+  background-color: rgba(255, 99, 71, 0.2);
+}
+
+tbody{
+	font-weight: 450;
+}
